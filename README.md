@@ -5,7 +5,7 @@ HTML vnode functions for Hyperapp.
 
 # Install
 
-This project is currently only hosted on Github. Fortunately, you can still install via npm.
+This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
 npm i whaaaley/tags
