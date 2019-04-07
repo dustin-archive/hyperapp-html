@@ -13,7 +13,7 @@ npm i whaaaley/tags
 
 ## Use
 
-The tags used in this package are pulled from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/#elements-3).
+The tags used in this package are pulled from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/indices.html#elements-3).
 
 ```js
 import { a, div, img } from 'tags'
