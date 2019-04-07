@@ -4,7 +4,7 @@
   "description": "HTML vnode functions for Hyperapp.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "MIT",
-  "main": "public",
+  "main": "public/index.js",
   "scripts": {
     "start": "rm -rf public && mkdir public && cp src/h.js public/h.js && node src/index.js > public/index.js"
   }

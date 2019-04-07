@@ -8,7 +8,7 @@ HTML vnode functions for Hyperapp.
 This project is currently only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm install whaaaley/tags
+npm i whaaaley/tags
 ```
 
 ## Use
