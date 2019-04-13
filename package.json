@@ -1,11 +1,8 @@
 {
   "name": "tags",
-  "version": "0.1.0",
-  "description": "HTML vnode functions for Hyperapp.",
+  "version": "0.2.0",
+  "description": "A proxy to create Hyperapp vnodes.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "MIT",
-  "main": "public/index.js",
-  "scripts": {
-    "start": "rm -rf public && mkdir public && cp src/h.js public/h.js && node src/index.js > public/index.js"
-  }
+  "main": "index.js"
 }

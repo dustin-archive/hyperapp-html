@@ -1,22 +1,21 @@
 
-# tags
+# html
 
-HTML vnode functions for Hyperapp.
+A [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to create Hyperapp vnodes.
 
-# Install
+## Install
 
 This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm i whaaaley/tags
+npm i finepoint-dev/html
 ```
 
 ## Use
 
-The tags used in this package are pulled from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/indices.html#elements-3).
-
 ```js
-import { a, div, img } from 'tags'
+import html from 'html'
+const { a, div, img } = html
 
 const Bar = () => (s, actions) => {
   return div({ class: 'bar'}, [
