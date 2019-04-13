@@ -1,7 +1,7 @@
 {
   "name": "tags",
   "version": "0.2.0",
-  "description": "A proxy to create Hyperapp vnodes",
+  "description": "A proxy to create Hyperapp vnodes.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "MIT",
   "main": "index.js"
