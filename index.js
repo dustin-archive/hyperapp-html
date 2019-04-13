@@ -11,8 +11,8 @@ const h = (tag, data, children) =>
     ? vnode(tag, data, children)
     : vnode(tag, {}, data)
 
-const tags = new Proxy({}, {
+const html = new Proxy({}, {
   get: (t, tag) => (data, children) => h(tag, data, children)
 })
 
-export default tags
+export default html

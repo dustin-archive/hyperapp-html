@@ -1,5 +1,5 @@
 
-# tags
+# html
 
 A [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to create Hyperapp vnodes.
 
@@ -14,8 +14,8 @@ npm i finepoint-dev/html
 ## Use
 
 ```js
-import tags from 'tags'
-const { a, div, img } = tags
+import html from 'html'
+const { a, div, img } = html
 
 const Bar = () => (s, actions) => {
   return div({ class: 'bar'}, [
