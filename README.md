@@ -1,14 +1,14 @@
 
 # tags
 
-A [Proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to create Hyperapp vnodes.
+A [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to create Hyperapp vnodes.
 
 ## Install
 
 This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm i whaaaley/tags
+npm i finepoint-dev/html
 ```
 
 ## Use
