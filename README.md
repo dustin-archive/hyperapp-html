@@ -1,7 +1,7 @@
 
 # html
 
-A [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) to create Hyperapp vnodes.
+A JavaScript [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) that returns Hyperapp vnodes.
 
 ## Install
 
