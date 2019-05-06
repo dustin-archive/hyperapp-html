@@ -1,18 +1,39 @@
 
-const vnode = (tag, data, children) => ({
-  nodeName: tag,
-  attributes: data,
-  children: Array.isArray(children) ? children : [children],
-  key: data.key
-})
+var cache = new Map()
 
-const h = (tag, data, children) =>
-  typeof data === 'object' && !Array.isArray(data)
-    ? vnode(tag, data, children)
-    : vnode(tag, {}, data)
+var vnode = function (tag, data, children) {
+  return {
+    nodeName: tag,
+    attributes: data,
+    children: Array.isArray(children) === true ? children : [children],
+    key: data.key
+  }
+}
 
-const html = new Proxy({}, {
-  get: (t, tag) => (data, children) => h(tag, data, children)
+var h = (tag, data, children) => {
+  if (typeof data === 'object' && Array.isArray(data) === false) {
+    return vnode(tag, data, children)
+  }
+
+  return vnode(tag, {}, data)
+}
+
+var html = new Proxy({}, {
+  get: function (target, name) {
+    var fn = cache.get(name)
+
+    if (fn) {
+      return fn
+    }
+
+    fn = function (data, children) {
+      return h(name, data, children)
+    }
+
+    cache.set(fn)
+
+    return fn
+  }
 })
 
 export default html
