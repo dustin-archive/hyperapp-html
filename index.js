@@ -1,21 +1,21 @@
 
 var cache = new Map()
 
-var vnode = function (tag, data, children) {
+var vnode = function (name, data, children) {
   return {
-    nodeName: tag,
+    nodeName: name,
     attributes: data,
     children: Array.isArray(children) === true ? children : [children],
     key: data.key
   }
 }
 
-var h = (tag, data, children) => {
+var h = (name, data, children) => {
   if (typeof data === 'object' && Array.isArray(data) === false) {
-    return vnode(tag, data, children)
+    return vnode(name, data, children)
   }
 
-  return vnode(tag, {}, data)
+  return vnode(name, {}, data)
 }
 
 var html = new Proxy({}, {
