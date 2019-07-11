@@ -17,7 +17,7 @@ npm i whaaaley/html
 import html from 'html'
 const { a, div, img } = html
 
-const Bar = () => (s, actions) => {
+const Bar = () => (_state, actions) => {
   return div({ class: 'bar'}, [
     div({ class: 'bar-title' }, [
       a({ href: '/' }, [
