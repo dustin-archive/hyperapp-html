@@ -19,7 +19,7 @@ var h = (name, data, children) => {
 }
 
 var html = new Proxy({}, {
-  get: function (target, name) {
+  get: function (_target, name) {
     var fn = cache.get(name)
 
     if (fn) {
