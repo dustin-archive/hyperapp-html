@@ -10,14 +10,6 @@ var vnode = function (name, data, children) {
   }
 }
 
-var h = (name, data, children) => {
-  if (typeof data === 'object' && Array.isArray(data) === false) {
-    return vnode(name, data, children)
-  }
-
-  return vnode(name, {}, data)
-}
-
 var html = new Proxy({}, {
   get: function (_target, name) {
     var fn = cache.get(name)
@@ -27,7 +19,11 @@ var html = new Proxy({}, {
     }
 
     fn = function (data, children) {
-      return h(name, data, children)
+      if (typeof data === 'object' && Array.isArray(data) === false) {
+        return vnode(name, data, children)
+      }
+
+      return vnode(name, {}, data)
     }
 
     cache.set(fn)
