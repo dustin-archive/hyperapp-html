@@ -1,7 +1,7 @@
 
 var cache = new Map()
 
-var vnode = function (name, data, children) {
+function vnode (name, data, children) {
   return {
     nodeName: name,
     attributes: data,
