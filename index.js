@@ -5,7 +5,7 @@ var vnode = function (name, data, children) {
   return {
     nodeName: name,
     attributes: data,
-    children: Array.isArray(children) === true ? children : [children],
+    children: Array.isArray(children) ? children : [children],
     key: data.key
   }
 }
@@ -19,7 +19,7 @@ var html = new Proxy({}, {
     }
 
     fn = function (data, children) {
-      if (typeof data === 'object' && Array.isArray(data) === false) {
+      if (typeof data === 'object' && !Array.isArray(data)) {
         return vnode(name, data, children)
       }
 
