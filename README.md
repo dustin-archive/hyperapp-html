@@ -1,14 +1,14 @@
 
-# tags
+# html#es5
 
-HTML vnode functions for Hyperapp.
+JavaScript functions that return virtual nodes.
 
-# Install
+## Install
 
 This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm i whaaaley/tags
+npm i github:whaaaley/html#es5
 ```
 
 ## Use
@@ -16,9 +16,9 @@ npm i whaaaley/tags
 The tags used in this package are pulled from the [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/indices.html#elements-3).
 
 ```js
-import { a, div, img } from 'tags'
+import { a, div, img } from 'html'
 
-const Bar = () => (s, actions) => {
+const Bar = () => (_state, actions) => {
   return div({ class: 'bar'}, [
     div({ class: 'bar-title' }, [
       a({ href: '/' }, [
