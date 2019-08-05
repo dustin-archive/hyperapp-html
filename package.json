@@ -1,9 +1,9 @@
 {
-  "name": "tags",
-  "version": "0.1.0",
-  "description": "HTML vnode functions for Hyperapp.",
+  "name": "html",
+  "version": "1.0.0",
+  "description": "JavaScript functions that return virtual nodes.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "main": "public/index.js",
   "scripts": {
     "start": "rm -rf public && mkdir public && cp src/h.js public/h.js && node src/index.js > public/index.js"
