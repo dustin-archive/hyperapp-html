@@ -8,7 +8,7 @@ A JavaScript [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Ref
 This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm i whaaaley/html
+npm i github:whaaaley/html
 ```
 
 ## Use
