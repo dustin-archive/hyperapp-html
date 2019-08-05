@@ -1,6 +1,6 @@
 {
   "name": "html",
-  "version": "0.5.0",
+  "version": "2.0.0",
   "description": "A JavaScript proxy that returns virtual nodes.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
   "license": "ISC",
