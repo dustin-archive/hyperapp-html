@@ -1,8 +1,8 @@
 {
   "name": "html",
-  "version": "0.3.0",
-  "description": "A JavaScript proxy that returns Hyperapp vnodes.",
+  "version": "2.0.0",
+  "description": "A JavaScript proxy that returns virtual nodes.",
   "author": "Dustin Dowell <dustindowell2@gmail.com>",
-  "license": "MIT",
+  "license": "ISC",
   "main": "index.js"
 }

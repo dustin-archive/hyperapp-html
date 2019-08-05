@@ -1,9 +1,3 @@
-
-# dirs
 node_modules
-
-# dotfiles
-.DS_Store
-
-# files
 package-lock.json
+.DS_Store

@@ -1,25 +1,17 @@
 
 var cache = new Map()
 
-var vnode = function (name, data, children) {
+function vnode (name, data, children) {
   return {
     nodeName: name,
     attributes: data,
-    children: Array.isArray(children) === true ? children : [children],
+    children: Array.isArray(children) ? children : [children],
     key: data.key
   }
 }
 
-var h = (name, data, children) => {
-  if (typeof data === 'object' && Array.isArray(data) === false) {
-    return vnode(name, data, children)
-  }
-
-  return vnode(name, {}, data)
-}
-
 var html = new Proxy({}, {
-  get: function (target, name) {
+  get: function (_target, name) {
     var fn = cache.get(name)
 
     if (fn) {
@@ -27,7 +19,11 @@ var html = new Proxy({}, {
     }
 
     fn = function (data, children) {
-      return h(name, data, children)
+      if (typeof data === 'object' && !Array.isArray(data)) {
+        return vnode(name, data, children)
+      }
+
+      return vnode(name, {}, data)
     }
 
     cache.set(fn)

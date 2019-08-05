@@ -1,14 +1,14 @@
 
 # html
 
-A JavaScript [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) that returns Hyperapp vnodes.
+A JavaScript [proxy](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy) that returns virtual nodes.
 
 ## Install
 
 This project is only hosted on Github. Fortunately, you can still install via npm.
 
 ```
-npm i finepoint-dev/html
+npm i github:whaaaley/html
 ```
 
 ## Use
@@ -17,7 +17,7 @@ npm i finepoint-dev/html
 import html from 'html'
 const { a, div, img } = html
 
-const Bar = () => (s, actions) => {
+const Bar = () => (_state, actions) => {
   return div({ class: 'bar'}, [
     div({ class: 'bar-title' }, [
       a({ href: '/' }, [
